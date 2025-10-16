@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro tus Gastos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+  <picture class=" logo_desarrollador">
+    <img src="visualx.png" alt="logo de visualx" class="logo">
+  </picture> 
+    <section class="titulo">    
+    <h1>Registra tus Gastos</h1>
+    <p>Ingresa un valor en cada categoría y presiona "Agregar" para sumar.</p>
+   </section>
+
+  </header>
+
+  <main class="contenedor">
+    <section class="categoria">
+      <label>Alimentos</label>
+      <input name="entrada" placeholder="Alimentos" type="number" step="any">
+      <button name="boton">Agregar</button>
+      <div class="resultado">Total: $<span class="total">0</span></div>
+    </section>
+
+    <section class="categoria">
+      <label>Transporte</label>
+      <input name="entrada" placeholder="Transporte" type="number" step="any">
+      <button name="boton">Agregar</button>
+      <div class="resultado">Total: $<span class="total">0</span></div>
+    </section>
+
+    <section class="categoria">
+      <label>Servicios</label>
+      <input name="entrada" placeholder="Servicios" type="number" step="any">
+      <button name="boton">Agregar</button>
+      <div class="resultado">Total: $<span class="total">0</span></div>
+    </section>
+
+    <section class="categoria">
+        <label>Escolares</label>
+        <input name="entrada" placeholder="Escolares" type="number" step="any">
+        <button name="boton">Agregar</button>
+        <div class="resultado">Total: $<span class="total">0</span></div>
+      </section>
+
+    <section class="categoria">
+      <label>Otros</label>
+      <input name="entrada" placeholder="Otros" type="number" step="any">
+      <button name="boton">Agregar</button>
+      <div class="resultado">Total: $<span class="total">0</span></div>
+    </section>
+  </main>
+
+  <footer class="acciones">
+    <button id="descargar">Descargar registro (.txt)</button>
+    <button id="borrar">Borrar registro guardado</button>
+  </footer>
+  <section class="total-general">
+    <h2>Total General: $<span id="total-general">0.00</span></h2>
+  </section>
+  
+
+  <script src="index.js"></script>
+</body>
+</html>
+

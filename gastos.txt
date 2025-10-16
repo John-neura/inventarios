@@ -1,0 +1,8 @@
+alimentacion:536440.0
+ocio:0.0
+servicios:229000.0
+hormiga:263790.0
+ropa:30000.0
+escolares:121500.0
+inverciones:200000.0
+otros:310000.0
