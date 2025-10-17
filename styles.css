@@ -129,6 +129,24 @@ header h1 {
     width: 100%;
   }
 }
+.contenedor {
+  padding: 1rem;
+  margin-left: 5%;
+}
+.header{
+  width: 25rem;
+  margin: 5%;
 
-
+}
+.titulo{
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  
+  
+  margin-left: 20%;
+}
+.logo_desarrollador{
+  width: 5px;
+}
   
