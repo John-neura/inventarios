@@ -1,4 +1,5 @@
 /* ==== ESTILO GENERAL ==== */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
@@ -15,9 +16,13 @@ body {
   color: white;
   text-align: center;
   padding: 1rem;
+  /* Aseguramos que el header se vea bien en desktop */
+  width: 100%; 
+  box-sizing: border-box; 
 }
 .titulo{
-  margin-left: 25%;
+  /* Centrado en pantallas grandes */
+  margin: auto; 
 }
 .logo {
   width: 7rem;
@@ -32,10 +37,12 @@ header h1 {
 .contenedor {
   display:flex;
   flex-direction: column;
-  margin-left: 35%;
+  align-items: center; 
+  /* CENTRADO CORREGIDO: margin-left anterior reemplazado por auto */
+  margin: 1.5rem auto; 
   gap: 1rem;
   padding: 1.5rem;
-  width: 400px;
+  width: 400px; /* Necesario para que margin: auto funcione */
 }
 
 /* ==== CADA CATEGORÍA ==== */
@@ -83,12 +90,15 @@ header h1 {
   color: #333;
 }
 
-/* ==== PIE DE PÁGINA ==== */
+/* ==== PIE DE PÁGINA (ACCIONES) ==== */
 .acciones {
   text-align: center;
   padding: 1rem;
   background-color: #e9ecef;
   border-top: 1px solid #ccc;
+  /* CENTRADO GENERAL: Aplicamos ancho máximo y centramos el bloque */
+  max-width: 400px;
+  margin: 0 auto; 
 }
 
 .acciones button {
@@ -107,10 +117,13 @@ header h1 {
   background-color: #146c43;
 }
 
+/* ==== TOTAL GENERAL ==== */
 .total-general {
   text-align: center;
   background-color: #f0f4f8;
-  margin: 1rem;
+  /* CENTRADO GENERAL: Aplicamos ancho máximo y centramos el bloque */
+  max-width: 400px;
+  margin: 1rem auto; 
   padding: 1rem;
   border-radius: 10px;
   font-weight: bold;
@@ -119,7 +132,8 @@ header h1 {
 }
 
 
-/* ==== RESPONSIVE ==== */
+/* ==== RESPONSIVE (SOLO MÓVIL) ==== */
+/* Todos los estilos de margen y width que aplicabas al final ahora van aquí para que solo afecten a pantallas pequeñas. */
 @media (max-width: 600px) {
   header h1 {
     font-size: 1.4rem;
@@ -128,33 +142,31 @@ header h1 {
   .categoria input {
     width: 100%;
   }
-}
-.contenedor {
-  padding: 1rem;
-  margin-left: 5%;
-}
-.header{
-  width: 25rem;
-  margin: 5%;
 
-}
-.titulo{
-  display: flex;
-  flex-direction: column;
-  height: 120px;
-  
-  
-  margin-left: 20%;
-}
-.logo_desarrollador{
-  width: 5px;
-}
-.acciones{
-  margin-left: 37%;
-  width: 200px;
-  
-}
-.total-general{
-  margin-left: 37%;
-  width: 200px;
+  /* REGLAS MÓVIL ESPECÍFICAS (Tus estilos anteriores movidos aquí) */
+  .contenedor {
+    padding: 1rem;
+    margin-left: 5%; /* Esto recostará el contenedor a la izquierda solo en móvil */
+  }
+  .header{
+    width: 25rem;
+    margin: 5%;
+  }
+  .titulo{
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    margin-left: 20%;
+  }
+  .logo_desarrollador{
+    width: 5px;
+  }
+  .acciones{
+    margin-left: 37%;
+    width: 200px;
+  }
+  .total-general{
+    margin-left: 37%;
+    width: 200px;
+  }
 }
