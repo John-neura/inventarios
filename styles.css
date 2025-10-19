@@ -150,8 +150,11 @@ header h1 {
   width: 5px;
 }
 .acciones{
-  margin-left: 15%
+  margin-left: 37%;
+  width: 200px;
+  
 }
 .total-general{
-  margin-left: 15%;
+  margin-left: 37%;
+  width: 200px;
 }
